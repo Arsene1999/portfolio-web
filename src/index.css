@@ -4,7 +4,13 @@
   padding: 0;
   font-family: "Poppins",
     sans-serif;
-
+    
+  --background-color: #f2dece;
+  --black: #000;
+  --light-green: #c6e7c1;
+  --dark-green: #279c16;
+  --white: #fff;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

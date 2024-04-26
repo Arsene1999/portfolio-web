@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AppContainer = styled.div`
-  background-color: #c6e7c1;
+  background-color: var(--background-color);
   display: "flex";
   width: 100vw;
   justify-content: center;

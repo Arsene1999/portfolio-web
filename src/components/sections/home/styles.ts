@@ -22,13 +22,14 @@ export const HomeSectionTextBox = styled.div`
 export const HomeSectionTitle = styled.h1`
   font-weight: 700;
   font-size: 3rem;
+  line-height: 1;
 `;
 
 export const HomeSectionSpan = styled.span`
-  color: #279c16;
+  color: var(--dark-green);
 `;
 
 export const HomeSectionSub = styled.p`
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.1em;
 `;
