@@ -1,4 +1,4 @@
-import { ActiveItem } from '../../types';
+import { ActiveItem } from "../../types";
 
 export type NavBarDataType = {
   text: string;
