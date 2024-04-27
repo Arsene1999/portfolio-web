@@ -1,8 +1,11 @@
 import TypeWriterAnimation from "../../animations/type-writer/TypeWriterAnimation";
 import {
+  HomeSectionAllingButtons,
+  HomeSectionButtons,
   HomeSectionContainer,
   HomeSectionSpan,
   HomeSectionSub,
+  HomeSectionText,
   HomeSectionTextBox,
   HomeSectionTitle,
   HomeSectionWrapper,
@@ -23,6 +26,14 @@ const HomeSection = () => {
               value={["Front-end development", "Looking for new projects"]}
             />
           </HomeSectionSub>
+          <HomeSectionText>
+            Passionate <span>Front-end Developer</span> with strong background
+            in both front-end and back-end technologies.
+          </HomeSectionText>
+          <HomeSectionAllingButtons>
+            <HomeSectionButtons>Hire Me</HomeSectionButtons>
+            <HomeSectionButtons>Resume </HomeSectionButtons>
+          </HomeSectionAllingButtons>
         </HomeSectionTextBox>
 
         <div>imagem</div>

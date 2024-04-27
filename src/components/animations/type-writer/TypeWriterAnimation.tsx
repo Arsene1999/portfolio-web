@@ -16,7 +16,7 @@ const TypeWriterAnimation: FC<ITypeWriterAnimation> = ({ value }) => {
         if (i !== 0) {
           setText(text.slice(0, i - 1));
           i--;
-          setTimeout(rowBack, 100);
+          setTimeout(rowBack, 200);
         } else {
           resolve(text);
         }
@@ -26,7 +26,7 @@ const TypeWriterAnimation: FC<ITypeWriterAnimation> = ({ value }) => {
         if (i < length) {
           setText(text.slice(0, i + 1));
           i++;
-          setTimeout(type, 100);
+          setTimeout(type, 200);
         } else {
           rowBack();
         }
