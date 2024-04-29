@@ -5,14 +5,13 @@ export const MainNavbarWrapper = styled.div`
   position: sticky;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -54px;
+  /* margin-bottom: -54px; */
   left: 0;
   right: 0;
   top: 10px;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   max-width: 800px;
-  border: 1px solid #adadad;
   border-radius: 8px;
   padding: 12px 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -23,7 +22,6 @@ export const MainNavbarWrapper = styled.div`
 export const MainNavbarContainer = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 `;
 
 export const MainNavbarLogo = styled.a`

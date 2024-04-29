@@ -7,7 +7,6 @@ import { ITypeWriterAnimation } from "./interfaces";
 
 const TypeWriterAnimation: FC<ITypeWriterAnimation> = ({ value }) => {
   const [text, setText] = useState<string>("");
-  const [keep, setKeep] = useState<boolean>(false);
 
   const typeWriter = (text: string, length: number) => {
     return new Promise((resolve) => {
@@ -44,13 +43,15 @@ const TypeWriterAnimation: FC<ITypeWriterAnimation> = ({ value }) => {
   };
 
   const keepDoing = () => {
-    typeStrings().then(() => setKeep((val) => !val));
+    typeStrings().then(() => {
+      keepDoing();
+    });
   };
 
   useEffect(() => {
     keepDoing();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [keep]);
+  }, []);
 
   return (
     <TypeWriterAnimationContainer>

@@ -1,6 +1,7 @@
 import TypeWriterAnimation from "../../animations/type-writer/TypeWriterAnimation";
 import {
   HomeSectionAllingButtons,
+  HomeSectionBouncyDiv,
   HomeSectionButtons,
   HomeSectionContainer,
   HomeSectionSpan,
@@ -10,6 +11,9 @@ import {
   HomeSectionTitle,
   HomeSectionWrapper,
 } from "./styles";
+import { FiChevronsDown } from "react-icons/fi";
+import { SlMouse } from "react-icons/sl";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const HomeSection = () => {
   return (
@@ -18,7 +22,7 @@ const HomeSection = () => {
         <HomeSectionTextBox>
           <HomeSectionTitle>
             Hello World, I’m <br />
-            <HomeSectionSpan>Jhon Dantas</HomeSectionSpan>
+            <HomeSectionSpan>John Dantas</HomeSectionSpan>
           </HomeSectionTitle>
           <HomeSectionSub>
             Experienced in:{" "}
@@ -32,8 +36,15 @@ const HomeSection = () => {
           </HomeSectionText>
           <HomeSectionAllingButtons>
             <HomeSectionButtons>Hire Me</HomeSectionButtons>
-            <HomeSectionButtons>Resume </HomeSectionButtons>
+
+            <HomeSectionButtons href={require("./Curriculo.pdf")}>
+              Resume <MdOutlineFileDownload size="1rem" />
+            </HomeSectionButtons>
           </HomeSectionAllingButtons>
+          <HomeSectionBouncyDiv>
+            <SlMouse size="2rem" />
+            <FiChevronsDown size="2rem" />
+          </HomeSectionBouncyDiv>
         </HomeSectionTextBox>
 
         <div>imagem</div>

@@ -1,16 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const HomeSectionWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  //width: 100vw;
+  /* height: 100vh; */
+  padding: 5rem 0 3rem;
 `;
 
 export const HomeSectionContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
 `;
 
 export const HomeSectionTextBox = styled.div`
@@ -54,7 +57,7 @@ export const HomeSectionAllingButtons = styled.div`
   padding-top: 1rem;
 `;
 
-export const HomeSectionButtons = styled.button`
+export const HomeSectionButtons = styled.a`
   padding: 8px;
   background-color: var(--dark-green);
   color: var(--white);
@@ -62,9 +65,44 @@ export const HomeSectionButtons = styled.button`
   font-size: 0.875rem;
   border-radius: 16px;
   width: 100%;
-  transition: filter 0.3s ease;
-
+  transition: filter 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
   &:hover {
     filter: brightness(85%);
+    cursor: pointer;
   }
+`;
+
+const bouncing = keyframes`
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50%{
+    transform: translateY(-30px);
+    opacity: 0.5;
+
+  }
+  
+  100%{
+    transform: translateY(0);
+    opacity: 1 ;
+
+  }
+`;
+
+export const HomeSectionBouncyDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  animation: ${bouncing} 3s ease-in-out infinite;
+
+  padding-top: 30px;
+  align-items: center;
 `;
