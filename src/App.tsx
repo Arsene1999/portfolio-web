@@ -12,7 +12,8 @@ const App = () => {
     <AppContainer>
       <MainNavbar navBarData={content} />
       <HomeSection />
-      <AboutSection /> <TimelineSection />
+      <AboutSection />
+      <TimelineSection />
     </AppContainer>
   );
 };

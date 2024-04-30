@@ -13,7 +13,7 @@ const MainNavbar: FC<IMainNavbar> = ({ navBarData }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll("div");
+      const sections = document.querySelectorAll("section");
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;

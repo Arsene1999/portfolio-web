@@ -4,8 +4,6 @@ export const HomeSectionWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  //width: 100vw;
-  /* height: 100vh; */
   padding: 5rem 0 3rem;
 `;
 
@@ -14,6 +12,9 @@ export const HomeSectionContainer = styled.div`
   justify-content: space-between;
   width: 80%;
   flex-wrap: wrap;
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
 `;
 
 export const HomeSectionTextBox = styled.div`

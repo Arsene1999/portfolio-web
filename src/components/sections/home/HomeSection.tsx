@@ -14,6 +14,7 @@ import {
 import { FiChevronsDown } from "react-icons/fi";
 import { SlMouse } from "react-icons/sl";
 import { MdOutlineFileDownload } from "react-icons/md";
+import PortaitComponent from "../../portait/PortaitComponent";
 
 const HomeSection = () => {
   return (
@@ -47,7 +48,7 @@ const HomeSection = () => {
           </HomeSectionBouncyDiv>
         </HomeSectionTextBox>
 
-        <div>imagem</div>
+        <PortaitComponent />
       </HomeSectionContainer>
     </HomeSectionWrapper>
   );

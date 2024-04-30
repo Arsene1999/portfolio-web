@@ -8,3 +8,8 @@ export const TimelineSectionWrapper = styled.section`
   flex-direction: column;
   gap: 2rem;
 `;
+
+export const TimelineSectionTitle = styled.h1`
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+`;

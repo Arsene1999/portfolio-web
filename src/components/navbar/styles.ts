@@ -18,9 +18,10 @@ export const MainNavbarWrapper = styled.div`
   z-index: 10;
 `;
 
-export const MainNavbarContainer = styled.div`
+export const MainNavbarContainer = styled.ul`
   display: flex;
   flex-direction: row;
+  list-style-type: none;
 `;
 
 export const MainNavbarLogo = styled.a`
