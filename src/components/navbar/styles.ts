@@ -5,18 +5,17 @@ export const MainNavbarWrapper = styled.div`
   position: sticky;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: -54px; */
   left: 0;
   right: 0;
   top: 10px;
   text-align: center;
-  /* width: 100%; */
   max-width: 800px;
   border-radius: 8px;
   padding: 12px 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   background-color: #fff;
+  z-index: 10;
 `;
 
 export const MainNavbarContainer = styled.div`
