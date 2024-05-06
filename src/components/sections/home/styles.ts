@@ -12,6 +12,7 @@ export const HomeSectionContainer = styled.div`
   justify-content: space-between;
   width: 80%;
   flex-wrap: wrap;
+  max-width: 1000px;
   @media (max-width: 900px) {
     justify-content: center;
   }

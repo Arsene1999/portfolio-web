@@ -1,9 +1,10 @@
 import * as React from "react";
+import { IconInterface } from "./interface";
 
-const ReactIcon: React.FC<{
-  width?: string | number | undefined;
-  height?: string | number | undefined;
-}> = ({ width = "1em", height = "1em" }) => {
+const ReactIcon: React.FC<IconInterface> = ({
+  width = "1em",
+  height = "1em",
+}) => {
   return (
     <svg
       viewBox="0 0 512 512"

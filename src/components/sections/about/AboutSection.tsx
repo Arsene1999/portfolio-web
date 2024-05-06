@@ -1,3 +1,4 @@
+import { flipCardResources } from "../../../resources/cards/CardsList";
 import { textAbout } from "../../../resources/text-about/TextAbout";
 import FlipCard from "../../flip-card/FlipCard";
 import {
@@ -17,14 +18,12 @@ const AboutSection = () => {
           <TextWithTitle title={t.title} text={t.text} />
         ))}
       </AboutSectionContainer>
+      <AboutSectionTitle>Skills </AboutSectionTitle>
+
       <AboutSectionFlipCard>
-        <FlipCard />
-        <FlipCard />
-        <FlipCard />
-        <FlipCard />
-        <FlipCard />
-        <FlipCard />
-        <FlipCard />
+        {flipCardResources.map((f) => (
+          <FlipCard Icon={f.icon} text={f.text} />
+        ))}
       </AboutSectionFlipCard>
     </AboutSectionWrapper>
   );
