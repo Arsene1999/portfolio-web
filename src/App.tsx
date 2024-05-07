@@ -6,6 +6,8 @@ import { content } from "./resources/navbar/NavBarResources";
 import HomeSection from "./components/sections/home/HomeSection";
 import AboutSection from "./components/sections/about/AboutSection";
 import TimelineSection from "./components/sections/timeline/TimelineSection";
+import WorksSections from "./components/sections/works/WorksSections";
+import ContactSection from "./components/sections/contact/ContactSection";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <HomeSection />
       <AboutSection />
       <TimelineSection />
+      <WorksSections />
+      <ContactSection />
     </AppContainer>
   );
 };

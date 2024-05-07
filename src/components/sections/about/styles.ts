@@ -10,6 +10,7 @@ export const AboutSectionWrapper = styled.section`
   padding: 2rem 0 3rem;
   flex-direction: column;
   gap: 2rem;
+  padding-top: 70px;
 `;
 
 export const AboutSectionContainer = styled.div`

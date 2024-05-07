@@ -5,6 +5,7 @@ export const HomeSectionWrapper = styled.section`
   justify-content: center;
   align-items: center;
   padding: 5rem 0 3rem;
+  padding-top: 70px;
 `;
 
 export const HomeSectionContainer = styled.div`
