@@ -16,7 +16,7 @@ import { CgClose } from "react-icons/cg";
 const MainNavbar: FC<IMainNavbar> = ({ navBarData }) => {
   const { activeNavItem, setActiveNavItem } = NavbarTrackHook();
   const { width } = WindowWidth();
-  const [openNav, setOpenNav] = useState<boolean>(true);
+  const [openNav, setOpenNav] = useState<boolean>(false);
 
   const renderItens = () => (
     <Fragment>

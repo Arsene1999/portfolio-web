@@ -20,6 +20,10 @@ export const ContactSectionContainer = styled.div`
   gap: 1rem;
   width: 100%;
   align-items: center;
+
+  @media (max-width: 450px) {
+    width: 85%;
+  }
 `;
 
 export const ContactSectionForm = styled.form`

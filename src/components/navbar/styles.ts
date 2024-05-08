@@ -17,9 +17,11 @@ export const MainNavbarWrapper = styled.div`
   background-color: #fff;
   z-index: 10;
   flex-direction: column;
+  margin: 0 20px;
 
   @media (max-width: 660px) {
     top: 0;
+    margin: 0;
     border-radius: 0;
   }
 `;
