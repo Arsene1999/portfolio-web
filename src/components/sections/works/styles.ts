@@ -10,7 +10,7 @@ export const WorksSectionsWrapper = styled.section`
   padding: 2rem 0 3rem;
   flex-direction: column;
   gap: 2rem;
-  height: 100vh;
+  height: 20vh;
   padding-top: 70px;
 `;
 

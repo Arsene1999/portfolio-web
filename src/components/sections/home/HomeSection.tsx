@@ -4,6 +4,7 @@ import {
   HomeSectionBouncyDiv,
   HomeSectionButtons,
   HomeSectionContainer,
+  HomeSectionDivBreak,
   HomeSectionSpan,
   HomeSectionSub,
   HomeSectionText,
@@ -15,8 +16,11 @@ import { FiChevronsDown } from "react-icons/fi";
 import { SlMouse } from "react-icons/sl";
 import { MdOutlineFileDownload } from "react-icons/md";
 import PortaitComponent from "../../portait/PortaitComponent";
+import { WindowWidth } from "../../../hook/WindowWidth";
 
 const HomeSection = () => {
+  const { width } = WindowWidth();
+
   return (
     <HomeSectionWrapper id="home">
       <HomeSectionContainer>
@@ -42,10 +46,14 @@ const HomeSection = () => {
               Resume <MdOutlineFileDownload size="1rem" />
             </HomeSectionButtons>
           </HomeSectionAllingButtons>
-          <HomeSectionBouncyDiv>
-            <SlMouse size="2rem" />
-            <FiChevronsDown size="2rem" />
-          </HomeSectionBouncyDiv>
+          {width < 900 ? (
+            <HomeSectionDivBreak />
+          ) : (
+            <HomeSectionBouncyDiv>
+              <SlMouse size="2rem" />
+              <FiChevronsDown size="2rem" />
+            </HomeSectionBouncyDiv>
+          )}
         </HomeSectionTextBox>
 
         <PortaitComponent />

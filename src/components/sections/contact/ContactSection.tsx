@@ -1,7 +1,15 @@
 import { FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import { ContactSectionWrapper, ContactSectionsTitle } from "./styles";
+import {
+  ContactSectionButton,
+  ContactSectionContainer,
+  ContactSectionForm,
+  ContactSectionInput,
+  ContactSectionTextarea,
+  ContactSectionWrapper,
+  ContactSectionsTitle,
+} from "./styles";
 
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -26,7 +34,7 @@ const ContactSection = () => {
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage(null);
-          }, 5000); // hide message after 5 seconds
+          }, 5000);
         },
         (error) => {
           setStateMessage("Something went wrong, please try again later");
@@ -43,16 +51,22 @@ const ContactSection = () => {
   return (
     <ContactSectionWrapper id="contact">
       <ContactSectionsTitle>Contact</ContactSectionsTitle>
-      <form onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" disabled={isSubmitting} />
-        {stateMessage && <p>{stateMessage}</p>}
-      </form>
+      <ContactSectionContainer>
+        <ContactSectionForm onSubmit={sendEmail}>
+          <ContactSectionInput
+            type="text"
+            name="user_name"
+            placeholder="Your name"
+          />
+          <ContactSectionTextarea name="message" placeholder="Your text" />
+          <ContactSectionButton
+            type="submit"
+            value="Send"
+            disabled={isSubmitting}
+          />
+          {stateMessage && <p>{stateMessage}</p>}
+        </ContactSectionForm>
+      </ContactSectionContainer>
     </ContactSectionWrapper>
   );
 };

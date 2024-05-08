@@ -16,6 +16,12 @@ export const MainNavbarWrapper = styled.div`
   justify-content: space-between;
   background-color: #fff;
   z-index: 10;
+  flex-direction: column;
+
+  @media (max-width: 660px) {
+    top: 0;
+    border-radius: 0;
+  }
 `;
 
 export const MainNavbarContainer = styled.ul`
@@ -24,10 +30,48 @@ export const MainNavbarContainer = styled.ul`
   list-style-type: none;
 `;
 
+export const MainNavbarContainer2 = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1rem;
+  padding-top: 1rem;
+  position: absolute;
+  width: 100%;
+  background-color: var(--white);
+  top: 45px;
+  left: 0;
+  right: 0;
+`;
+
+export const MainNavbarAllign = styled.div`
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+`;
+
 export const MainNavbarLogo = styled.a`
   font-size: large;
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
   color: #000;
+`;
+
+export const MainNavbarButton = styled.button`
+  background-color: var(--white);
+  transition: filter 0.5s ease;
+  cursor: pointer;
+  color: var(--dark-green);
+  border-radius: 8px;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    filter: brightness(85%);
+  }
 `;

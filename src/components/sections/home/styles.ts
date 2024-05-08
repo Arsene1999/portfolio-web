@@ -11,7 +11,7 @@ export const HomeSectionWrapper = styled.section`
 export const HomeSectionContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
   max-width: 1000px;
   @media (max-width: 900px) {
@@ -24,6 +24,7 @@ export const HomeSectionTextBox = styled.div`
   flex-direction: column;
   max-width: 25rem;
   gap: 1rem;
+  margin: 0 2rem;
 `;
 
 export const HomeSectionTitle = styled.h1`
@@ -58,6 +59,10 @@ export const HomeSectionAllingButtons = styled.div`
   gap: 12px;
   justify-content: center;
   padding-top: 1rem;
+  margin: 0 1rem;
+  @media (max-width: 660px) {
+    flex-direction: column;
+  }
 `;
 
 export const HomeSectionButtons = styled.a`
@@ -108,4 +113,8 @@ export const HomeSectionBouncyDiv = styled.div`
 
   padding-top: 30px;
   align-items: center;
+`;
+
+export const HomeSectionDivBreak = styled.div`
+  padding: 1rem 0;
 `;
