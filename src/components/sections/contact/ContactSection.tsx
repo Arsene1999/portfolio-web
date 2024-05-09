@@ -50,7 +50,7 @@ const ContactSection = () => {
 
   return (
     <ContactSectionWrapper id="contact">
-      <ContactSectionsTitle>Contact</ContactSectionsTitle>
+      <ContactSectionsTitle>Contato</ContactSectionsTitle>
       <ContactSectionContainer>
         <ContactSectionForm onSubmit={sendEmail}>
           <ContactSectionInput

@@ -1,14 +1,14 @@
 export const textAbout = [
   {
-    title: "Little About Me",
-    text: "Passionate, highly organized, and goal-oriented Full-stack Developer with strong background in both front-end and back-end technologies.",
+    title: "Um pouco sobre mim",
+    text: "Desenvolvedor Front-end altamente organizado e orientado a objetivos, com sólida experiência em tecnologias front-end e com conhecimentos em back-end",
   },
   {
-    title: "Education",
-    text: "Education M.A. Degree in Project ManagementBSc. Degree in Computer Science",
+    title: "Educação",
+    text: "Bacharel em Ciência da Computação desde 2023 pela Universidade Federal de Sergipe",
   },
   {
-    title: "Services I Deliver",
-    text: "I will deliver quality services with a philosophy of “Born to create, Live for Excellence!”.",
+    title: "O que tenho a oferecer",
+    text: "Entregarei serviços de qualidade com a filosofia “Nascer para criar, Viver para a Excelência!”",
   },
 ];

@@ -3,27 +3,27 @@ import { NavBarDataType } from "./types";
 export const content: NavBarDataType[] = [
   {
     href: "/#home",
-    text: "Home",
+    text: "Inico",
     id: "home",
   },
   {
     href: "/#about",
-    text: "About",
+    text: "Sobre",
     id: "about",
   },
   {
     href: "/#experience",
-    text: "Experience",
+    text: "Experiência",
     id: "experience",
   },
   {
     href: "/#my-works",
-    text: "My Works",
+    text: "Trabalhos",
     id: "my-works",
   },
   {
     href: "/#contact",
-    text: "Contact",
+    text: "Contato",
     id: "contact",
   },
 ];

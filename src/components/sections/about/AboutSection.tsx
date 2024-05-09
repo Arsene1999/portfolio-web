@@ -12,13 +12,13 @@ import TextWithTitle from "./text-with-title/TextWithTitle";
 const AboutSection = () => {
   return (
     <AboutSectionWrapper id="about">
-      <AboutSectionTitle>About Me </AboutSectionTitle>
+      <AboutSectionTitle>Sobre mim</AboutSectionTitle>
       <AboutSectionContainer>
         {textAbout.map((t) => (
           <TextWithTitle title={t.title} text={t.text} />
         ))}
       </AboutSectionContainer>
-      <AboutSectionTitle>Skills </AboutSectionTitle>
+      <AboutSectionTitle>Habilidades</AboutSectionTitle>
 
       <AboutSectionFlipCard>
         {flipCardResources.map((f) => (

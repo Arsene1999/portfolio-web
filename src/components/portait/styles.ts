@@ -6,4 +6,9 @@ export const PortraitWithBorder = styled.img`
   border: 15px solid var(--dark-green);
   border-radius: 50%;
   object-fit: cover;
+
+  @media (max-width: 400px) {
+    width: 250px;
+    height: 250px;
+  }
 `;

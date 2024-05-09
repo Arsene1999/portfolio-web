@@ -7,7 +7,7 @@ import { timeLineResources } from "../../../resources/time-line/TimeLineResource
 const TimelineSection = () => {
   return (
     <TimelineSectionWrapper id="experience">
-      <TimelineSectionTitle>Experience</TimelineSectionTitle>
+      <TimelineSectionTitle>Experiência</TimelineSectionTitle>
       <VerticalTimeline>
         {timeLineResources.map((t) => (
           <TimeInfo

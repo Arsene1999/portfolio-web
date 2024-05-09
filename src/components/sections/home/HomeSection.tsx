@@ -26,24 +26,33 @@ const HomeSection = () => {
       <HomeSectionContainer>
         <HomeSectionTextBox>
           <HomeSectionTitle>
-            Hello World, I’m <br />
-            <HomeSectionSpan>John Dantas</HomeSectionSpan>
+            Olá, Eu sou
+            <br />
+            <HomeSectionSpan>João Dantas</HomeSectionSpan>
           </HomeSectionTitle>
           <HomeSectionSub>
-            Experienced in:{" "}
+            Experiente em:{" "}
             <TypeWriterAnimation
-              value={["Front-end development", "Looking for new projects"]}
+              value={[
+                "Desenvolvimento front-end",
+                "React.js",
+                "Next.js",
+                "Git",
+                "Azure",
+              ]}
             />
           </HomeSectionSub>
           <HomeSectionText>
-            Passionate <span>Front-end Developer</span> with strong background
-            in both front-end and back-end technologies.
+            <span>Desenvolvedor Front-end </span>apaixonado, com sólida
+            experiência em React, Next, Material Ui e Chakra Ui.
           </HomeSectionText>
           <HomeSectionAllingButtons>
-            <HomeSectionButtons>Hire Me</HomeSectionButtons>
+            <HomeSectionButtons href="/#contact">
+              Contrate-me
+            </HomeSectionButtons>
 
             <HomeSectionButtons href={require("./Curriculo.pdf")}>
-              Resume <MdOutlineFileDownload size="1rem" />
+              Currículo <MdOutlineFileDownload size="1rem" />
             </HomeSectionButtons>
           </HomeSectionAllingButtons>
           {width < 900 ? (
