@@ -6,13 +6,14 @@ export const FooterWrapper = styled.footer`
   background-image: radial-gradient(#84c979 2px, #127c02 2px);
   background-size: 40px 40px;
   padding: 1rem;
+  text-align: center;
 `;
 
 export const FooterText = styled.small`
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
-  display: block;
+
   text-align: center;
   color: var(--white);
 `;
